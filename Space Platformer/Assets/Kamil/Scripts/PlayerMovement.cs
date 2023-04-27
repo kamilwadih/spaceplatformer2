@@ -19,6 +19,8 @@ public class PlayerMovement : MonoBehaviour
     private bool isGrounded;
     private int jumpCount;
 
+    public Animator animator;
+
     // Awake is called after all objects are intiialized. Called in a random order.
     private void Awake()
     {
@@ -38,6 +40,8 @@ public class PlayerMovement : MonoBehaviour
 
         // Animate
         Animate();
+
+        animator.SetFloat("Horizontal", Mathf.Abs(moveDirection));
     }
 
     // Better for handling physics, can be called multiple times per update frame.
