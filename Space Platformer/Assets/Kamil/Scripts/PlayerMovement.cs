@@ -11,13 +11,14 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask groundObjects;
     public float checkRadius;
     public int maxJumpCount;
-
+    
     private Rigidbody2D rb;
     private bool facingRight = true;
-    private float moveDirection;
+    public float moveDirection;
     private bool isJumping = false;
     private bool isGrounded;
     private int jumpCount;
+
 
     public Animator animator;
 
@@ -25,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>(); // Will look for a component on this GameObject (what the script is attached to) of type Rigidbody2D.
+        animator = GetComponent<Animator>();
     }
 
     private void Start()
