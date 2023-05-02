@@ -40,7 +40,7 @@ public class PlayerManager : MonoBehaviour
     }
     public void TakeDamage()
     {
-        currentHealth -= 1;
+        currentHealth -= 5;
     }
     public void PauseGame()
     {
