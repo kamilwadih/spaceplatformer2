@@ -19,10 +19,13 @@ public class PlayerMovement : MonoBehaviour
     private bool isGrounded;
     private int jumpCount;
 
+    public Animator animator;
+
     // Awake is called after all objects are intiialized. Called in a random order.
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>(); // Will look for a component on this GameObject (what the script is attached to) of type Rigidbody2D.
+        animator = GetComponent<Animator>();
     }
 
     private void Start()
@@ -38,6 +41,8 @@ public class PlayerMovement : MonoBehaviour
 
         // Animate
         Animate();
+
+        animator.SetFloat("Horizontal", Mathf.Abs(moveDirection));
     }
 
     // Better for handling physics, can be called multiple times per update frame.
