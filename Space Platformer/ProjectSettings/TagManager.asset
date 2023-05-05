@@ -8,6 +8,7 @@ TagManager:
   - Currency
   - MovingPlatform
   - Speed+
+  - LowGravity
   layers:
   - Default
   - TransparentFX

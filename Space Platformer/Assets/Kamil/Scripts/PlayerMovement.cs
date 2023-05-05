@@ -101,9 +101,21 @@ public class PlayerMovement : MonoBehaviour
         moveSpeed = 5;
     }
 
+    IEnumerator PowerUpLowGravity()
+    {
+        rb.gravityScale = 0.5f;
+        yield return new WaitForSeconds(7);
+        rb.gravityScale = 1;
+    }
+
     public void SpeedPowerUp()
     {
         StartCoroutine(PowerUpSpeed());
+    }
+
+    public void LowGravityPowerUp()
+    {
+        StartCoroutine(PowerUpLowGravity());
     }
 
     private void OnCollisionEnter2D(Collision2D col)

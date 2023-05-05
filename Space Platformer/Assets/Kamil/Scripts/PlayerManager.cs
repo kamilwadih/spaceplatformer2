@@ -33,6 +33,9 @@ public class PlayerManager : MonoBehaviour
             case "Speed+":
                 pMove.SpeedPowerUp();
                 return true;
+            case "LowGravity":
+                pMove.LowGravityPowerUp();
+                return true;
             default:
                 Debug.Log("No tag or reference is set for this GameObject");
                 return false;
