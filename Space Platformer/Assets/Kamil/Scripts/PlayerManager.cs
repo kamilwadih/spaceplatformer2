@@ -7,11 +7,17 @@ public class PlayerManager : MonoBehaviour
     //declare two variables one max and one current health
     public int currentHealth;
     public int maxHealth;
+    public HealthBar3 healthBar;
 
     PlayerMovement pMove;
     void Awake()
     {
         pMove = GetComponent<PlayerMovement>();
+    }
+
+    void Start()
+    {
+        healthBar.SetMaxHealth(maxHealth);
     }
 
     public int coinCount;
@@ -41,9 +47,10 @@ public class PlayerManager : MonoBehaviour
                 return false;
         }
     }
-    public void TakeDamage()
+    public void TakeDamage(int damage)
     {
-        currentHealth -= 5;
+        currentHealth -= damage;
+        healthBar.SetHealth(currentHealth);
     }
     public void PauseGame()
     {

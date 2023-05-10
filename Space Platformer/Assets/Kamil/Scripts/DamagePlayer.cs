@@ -5,6 +5,8 @@ using UnityEngine;
 public class DamagePlayer : MonoBehaviour
 {
 
+    public int damage = 0;
+
     PlayerManager playerManager;
     // Start is called before the first frame update
     void Start()
@@ -21,7 +23,7 @@ public class DamagePlayer : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            playerManager.TakeDamage();
+            playerManager.TakeDamage(damage);
         }
     }
 }

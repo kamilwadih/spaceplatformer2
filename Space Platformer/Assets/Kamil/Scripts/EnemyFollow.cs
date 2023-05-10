@@ -17,13 +17,16 @@ public class EnemyFollow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Vector2.Distance(transform.position, player.position) < 3f)
+        if (transform != null && player != null)
         {
-            transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
-        }
-        else
-        {
-            MoveToNextPoint();
+            if (Vector2.Distance(transform.position, player.position) < 3f)
+            {
+                transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
+            }
+            else
+            {
+                MoveToNextPoint();
+            }
         }
     }
 
