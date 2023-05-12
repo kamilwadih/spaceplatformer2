@@ -19,6 +19,8 @@ public class PlayerMovement : MonoBehaviour
     private bool isGrounded;
     private int jumpCount;
 
+    private float yTerminalVelocity = 7f;
+
 
     public Animator animator;
 
@@ -61,13 +63,26 @@ public class PlayerMovement : MonoBehaviour
 
     private void Move()
     {
-        rb.velocity = new Vector2(moveDirection * moveSpeed, rb.velocity.y);
+
+        float yVelocity = Mathf.Clamp(rb.velocity.y, -yTerminalVelocity, yTerminalVelocity * 2);
+        bool doubleJumpForce = false;
+        if (yVelocity < (-yTerminalVelocity + 0.5f)) doubleJumpForce = true;
+        rb.velocity = new Vector2(moveDirection * moveSpeed, yVelocity);
+
         if (isJumping)
         {
-            rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
+            if (doubleJumpForce)
+            {
+                rb.AddForce(new Vector2(0f, jumpForce * 2), ForceMode2D.Impulse);
+            }
+            else
+            {
+                rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
+            }
             jumpCount--;
         }
         isJumping = false;
+
     }
     private void Animate()
     {

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -8,6 +9,9 @@ public class PlayerManager : MonoBehaviour
     public int currentHealth;
     public int maxHealth;
     public HealthBar3 healthBar;
+
+    public int coinCount;
+    public Text coinText;
 
     PlayerMovement pMove;
     void Awake()
@@ -20,14 +24,13 @@ public class PlayerManager : MonoBehaviour
         healthBar.SetMaxHealth(maxHealth);
     }
 
-    public int coinCount;
-
     public void Update()
     {
         if (currentHealth <= 0)
         {
             PauseGame();
         }
+        coinText.text = coinCount.ToString();
     }
     public bool PickupItem(GameObject obj)
     {
