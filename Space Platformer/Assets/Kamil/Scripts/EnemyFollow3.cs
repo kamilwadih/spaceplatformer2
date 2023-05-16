@@ -52,7 +52,7 @@ public class EnemyFollow3 : MonoBehaviour
             //check if we are at the end of the line make our change value -1
             if (nextId == points.Count -1)
             {
-                idChangeValue = 1;
+                idChangeValue = -1;
             }
 
             //check if we are the start of the line and make our change value 1
