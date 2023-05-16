@@ -14,8 +14,6 @@ public class EnemyFollow3 : MonoBehaviour
     //sets our speed of the emeny
     public float speed = 2;
 
-
-
     // Update is called once per frame
     void Update()
     {
@@ -24,14 +22,12 @@ public class EnemyFollow3 : MonoBehaviour
             if (Vector2.Distance(transform.position, player.position) < 10f)
             {
                 transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
-
             }
             else
             {
                 MoveToNextPoint();
             }
         }
-
     }
 
     void MoveToNextPoint()
@@ -53,7 +49,18 @@ public class EnemyFollow3 : MonoBehaviour
         //Check the distance between the emeny and the goalPoint to trigger the next point
         if (Vector2.Distance(transform.position, goalPoint.position) < 1f)
         {
-            idChangeValue = -1;
+            //check if we are at the end of the line make our change value -1
+            if (nextId == points.Count -1)
+            {
+                idChangeValue = 1;
+            }
+
+            //check if we are the start of the line and make our change value 1
+            if (nextId == 0)
+            {
+                idChangeValue = 1;
+            }
+            nextId += idChangeValue;
         }
     }
 }
