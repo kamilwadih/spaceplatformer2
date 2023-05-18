@@ -45,6 +45,9 @@ public class PlayerManager : MonoBehaviour
             case "LowGravity":
                 pMove.LowGravityPowerUp();
                 return true;
+            case "HPHealth":
+                AddHealth(10);
+                return true;
             default:
                 Debug.Log("No tag or reference is set for this GameObject");
                 return false;
@@ -55,6 +58,17 @@ public class PlayerManager : MonoBehaviour
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
     }
+
+    public void AddHealth(int amount)
+    {
+        currentHealth += amount;
+        if (currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+        healthBar.SetHealth(currentHealth);
+    }
+
     public void PauseGame()
     {
         Time.timeScale = 0;
