@@ -37,9 +37,9 @@ public class PlayerManager : MonoBehaviour
                 return false;
         }
     }
-    public void TakeDamage()
+    public void TakeDamage(int damage)
     {
-        currentHealth -= 5;
+        currentHealth -= damage;
     }
     public void PauseGame()
     {

@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class EnemyDamage : MonoBehaviour
 {
-    public PlayerHealth playerHealth;
-    public int damage = 2;
+    public PlayerManager playerManager;
+    public int damage = 0;
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collider.gameObject.tag == "Player")
         {
-            playerHealth.TakeDamage(damage);
+            playerManager.TakeDamage(damage);
         }
     }
 }

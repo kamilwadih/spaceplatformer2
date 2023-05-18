@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyFollow : MonoBehaviour
+public class EnemyFollow2 : MonoBehaviour
 {
     public Transform player;
     //reference for my waypoints
@@ -35,11 +35,11 @@ public class EnemyFollow : MonoBehaviour
         //Might need to change based off of the sprites natural face
         if (goalPoint.transform.position.x > transform.position.x)
         {
-            transform.localScale = new Vector3(0.84f, 0.84f, 1);
+            transform.localScale = new Vector3(1.8f, 1.8f, 1);
         }
         else
         {
-            transform.localScale = new Vector3(-0.84f, 0.84f, 1);
+            transform.localScale = new Vector3(-1.8f, 1.8f, 1);
         }
         //Move the emeny towards out point
         transform.position = Vector2.MoveTowards(transform.position, goalPoint.position, speed * Time.deltaTime);
