@@ -3335,7 +3335,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8720150038138632639, guid: 0c17a139be5fdc64f8528c78a023baf0, type: 3}
       propertyPath: damage
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8720150038138632639, guid: 0c17a139be5fdc64f8528c78a023baf0, type: 3}
       propertyPath: playerManager
@@ -15035,7 +15035,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerManager: {fileID: 1113777470}
-  damage: 5
+  damage: 3
 --- !u!114 &303900810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30259,7 +30259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerManager: {fileID: 1113777470}
-  damage: 5
+  damage: 3
 --- !u!114 &719234865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31644,7 +31644,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8720150038138632639, guid: 0c17a139be5fdc64f8528c78a023baf0, type: 3}
       propertyPath: damage
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8720150038138632639, guid: 0c17a139be5fdc64f8528c78a023baf0, type: 3}
       propertyPath: playerManager
@@ -32754,7 +32754,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8720150038138632639, guid: 0c17a139be5fdc64f8528c78a023baf0, type: 3}
       propertyPath: damage
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8720150038138632639, guid: 0c17a139be5fdc64f8528c78a023baf0, type: 3}
       propertyPath: playerManager
@@ -86103,6 +86103,10 @@ PrefabInstance:
       value: Boss Root
       objectReference: {fileID: 0}
     - target: {fileID: 1263795830987320323, guid: e8cec0002a915924d81b891deb5462b1, type: 3}
+      propertyPath: damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1263795830987320323, guid: e8cec0002a915924d81b891deb5462b1, type: 3}
       propertyPath: playerManager
       value: 
       objectReference: {fileID: 1113777470}
@@ -86169,7 +86173,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1334409598764263322, guid: 954637ed165c984488d4938c05bccf10, type: 3}
       propertyPath: damage
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1334409598764263322, guid: 954637ed165c984488d4938c05bccf10, type: 3}
       propertyPath: playerManager
