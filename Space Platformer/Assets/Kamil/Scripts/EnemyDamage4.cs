@@ -12,7 +12,6 @@ public class EnemyDamage4 : MonoBehaviour
     {
         if (collider.gameObject.tag == "Player")
         {
-            Debug.Log("Working");
             animator.SetTrigger("Attack");
             playerManager.TakeDamage(damage);
         }

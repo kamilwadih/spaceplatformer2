@@ -19,7 +19,7 @@ public class EnemyFollow3 : MonoBehaviour
     {
         if (transform != null && player != null)
         {
-            if (Vector2.Distance(transform.position, player.position) < 10f)
+            if (Vector2.Distance(transform.position, player.position) < 5f)
             {
                 transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
             }
