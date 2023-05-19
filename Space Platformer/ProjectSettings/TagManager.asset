@@ -10,6 +10,7 @@ TagManager:
   - Speed+
   - LowGravity
   - HPHealth
+  - Enemy
   layers:
   - Default
   - TransparentFX
