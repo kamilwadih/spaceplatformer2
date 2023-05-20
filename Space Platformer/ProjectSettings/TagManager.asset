@@ -11,6 +11,7 @@ TagManager:
   - LowGravity
   - HPHealth
   - Enemy
+  - Boss
   layers:
   - Default
   - TransparentFX

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class BossHealthBar : MonoBehaviour
 {
     public Slider slider;
-    public BossHealth bossHealth;
+    private BossHealth bossHealth; 
 
     private void Start()
     {
@@ -23,5 +23,10 @@ public class BossHealthBar : MonoBehaviour
     public void SetHealth(int health)
     {
         slider.value = health;
+    }
+
+    private void Update()
+    {
+        SetHealth(bossHealth.currentHealth);
     }
 }
