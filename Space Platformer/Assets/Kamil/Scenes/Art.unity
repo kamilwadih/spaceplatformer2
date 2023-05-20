@@ -86615,6 +86615,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boss Health Bar
       objectReference: {fileID: 0}
+    - target: {fileID: 3688425298265482251, guid: b3f58800fef3d1847ae01601a3763629, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3f58800fef3d1847ae01601a3763629, type: 3}
 --- !u!1001 &9086007905711869202

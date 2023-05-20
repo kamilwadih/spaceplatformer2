@@ -47,7 +47,7 @@ public class Projectile : MonoBehaviour
         }
         else if (collision.gameObject.tag == "Boss")
         {
-            bossHealth.TakeDamage(10);
+            bossHealth.TakeDamage(5);
             Destroy(gameObject);
         }
         else if (collision.gameObject.tag != "Player")
