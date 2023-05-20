@@ -9,6 +9,7 @@ public class Projectile : MonoBehaviour
     private Rigidbody2D rb;
     private float speed = 0.2f;
     private GameObject player;
+    private BossHealth bossHealth;
 
     private Vector3 direction;
 
@@ -17,6 +18,7 @@ public class Projectile : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("Player");
+        bossHealth = GameObject.FindGameObjectWithTag("Boss").GetComponent<BossHealth>();
     }
 
     private void Start()
@@ -43,10 +45,14 @@ public class Projectile : MonoBehaviour
             Destroy(gameObject);
             Destroy(collision.gameObject);
         }
+        else if (collision.gameObject.tag == "Boss")
+        {
+            bossHealth.TakeDamage(10);
+            Destroy(gameObject);
+        }
         else if (collision.gameObject.tag != "Player")
         {
             Destroy(gameObject);
         }
     }
-
 }
