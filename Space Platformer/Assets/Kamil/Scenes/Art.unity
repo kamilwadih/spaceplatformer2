@@ -3464,7 +3464,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8720150038138632577, guid: 0c17a139be5fdc64f8528c78a023baf0, type: 3}
       propertyPath: m_TagString
-      value: Boss
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 8720150038138632639, guid: 0c17a139be5fdc64f8528c78a023baf0, type: 3}
       propertyPath: damage
