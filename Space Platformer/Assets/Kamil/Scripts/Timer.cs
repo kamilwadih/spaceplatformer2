@@ -18,7 +18,7 @@ public class Timer : MonoBehaviour
 
     [Header("Format Settings")]
     public bool hasFormat;
-        public TimerFormats format;
+    public TimerFormats format;
     private Dictionary<TimerFormats, string> timeFormats = new Dictionary<TimerFormats, string>();
 
     // Start is called before the first frame update
@@ -48,11 +48,4 @@ public class Timer : MonoBehaviour
     {
         timerText.text = hasFormat ? currentTime.ToString(timeFormats[format]) : currentTime.ToString();
     }
-}
-
-public enum TimerFormats
-{
-    Whole,
-    TenthDecimal,
-    HundrethsDecimal
 }

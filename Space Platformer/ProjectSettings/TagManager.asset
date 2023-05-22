@@ -12,6 +12,7 @@ TagManager:
   - HPHealth
   - Enemy
   - Boss
+  - Trigger
   layers:
   - Default
   - TransparentFX

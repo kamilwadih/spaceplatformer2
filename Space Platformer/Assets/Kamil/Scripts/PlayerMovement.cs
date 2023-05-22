@@ -11,16 +11,13 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask groundObjects;
     public float checkRadius;
     public int maxJumpCount;
-    
+
     private Rigidbody2D rb;
     private bool facingRight = true;
-    public float moveDirection;
+    private float moveDirection;
     private bool isJumping = false;
     private bool isGrounded;
     private int jumpCount;
-
-    private float yTerminalVelocity = 7f;
-
 
     public Animator animator;
 
@@ -63,26 +60,13 @@ public class PlayerMovement : MonoBehaviour
 
     private void Move()
     {
-
-        float yVelocity = Mathf.Clamp(rb.velocity.y, -yTerminalVelocity, yTerminalVelocity * 2);
-        bool doubleJumpForce = false;
-        if (yVelocity < (-yTerminalVelocity + 0.5f)) doubleJumpForce = true;
-        rb.velocity = new Vector2(moveDirection * moveSpeed, yVelocity);
-
+        rb.velocity = new Vector2(moveDirection * moveSpeed, rb.velocity.y);
         if (isJumping)
         {
-            if (doubleJumpForce)
-            {
-                rb.AddForce(new Vector2(0f, jumpForce * 2), ForceMode2D.Impulse);
-            }
-            else
-            {
-                rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
-            }
+            rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
             jumpCount--;
         }
         isJumping = false;
-
     }
     private void Animate()
     {
@@ -116,21 +100,9 @@ public class PlayerMovement : MonoBehaviour
         moveSpeed = 5;
     }
 
-    IEnumerator PowerUpLowGravity()
-    {
-        rb.gravityScale = 0.5f;
-        yield return new WaitForSeconds(7);
-        rb.gravityScale = 1;
-    }
-
     public void SpeedPowerUp()
     {
         StartCoroutine(PowerUpSpeed());
-    }
-
-    public void LowGravityPowerUp()
-    {
-        StartCoroutine(PowerUpLowGravity());
     }
 
     private void OnCollisionEnter2D(Collision2D col)

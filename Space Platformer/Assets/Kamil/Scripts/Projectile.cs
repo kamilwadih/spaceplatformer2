@@ -18,7 +18,11 @@ public class Projectile : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("Player");
-        bossHealth = GameObject.FindGameObjectWithTag("Boss").GetComponent<BossHealth>();
+
+        if (GameObject.FindGameObjectWithTag("Boss"))
+        {
+            bossHealth = GameObject.FindGameObjectWithTag("Boss").GetComponent<BossHealth>();
+        }
     }
 
     private void Start()
@@ -45,12 +49,12 @@ public class Projectile : MonoBehaviour
             Destroy(gameObject);
             Destroy(collision.gameObject);
         }
-        else if (collision.gameObject.tag == "Boss")
+        else if (collision.gameObject.tag == "Boss" && bossHealth != null)
         {
             bossHealth.TakeDamage(5);
             Destroy(gameObject);
         }
-        else if (collision.gameObject.tag != "Player")
+        else if (collision.gameObject.tag != "Player" && collision.gameObject.tag != "Trigger")
         {
             Destroy(gameObject);
         }

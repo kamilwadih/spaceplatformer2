@@ -37,7 +37,7 @@ public class EnemyFollow3 : MonoBehaviour
 
         transform.position = Vector2.MoveTowards(transform.position, goalPoint.position, speed * Time.deltaTime);
 
-        if (Vector2.Distance(transform.position, goalPoint.position) < 1f)
+        if (Vector2.Distance(transform.position, goalPoint.position) < 3f)
         {
             if (nextId == points.Count - 1)
             {
