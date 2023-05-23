@@ -32,6 +32,7 @@ public class PlayerManager : MonoBehaviour
         }
         coinText.text = coinCount.ToString();
     }
+
     public bool PickupItem(GameObject obj)
     {
         switch (obj.tag)

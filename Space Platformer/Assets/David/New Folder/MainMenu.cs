@@ -18,7 +18,7 @@ public class MainMenu : MonoBehaviour
 
    public void PlayGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); // all of these loads "Level_0"
+        SceneManager.LoadScene("Level 1");
     }
 
     public void QuitGame()
@@ -28,7 +28,6 @@ public class MainMenu : MonoBehaviour
 
     public void GoToSettingsMenu()
     {
-        Debug.Log("this works");
         SceneManager.LoadScene("SettingsMenu");
     }
 

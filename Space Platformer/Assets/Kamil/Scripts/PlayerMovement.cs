@@ -105,6 +105,13 @@ public class PlayerMovement : MonoBehaviour
         StartCoroutine(PowerUpSpeed());
     }
 
+    public IEnumerator LowGravityPowerUp()
+    {
+        rb.gravityScale = 0.5f;
+        yield return new WaitForSeconds(5);
+        rb.gravityScale = 1;
+    }
+
     private void OnCollisionEnter2D(Collision2D col)
     {
         if (col.gameObject.tag == "MovingPlatform")
