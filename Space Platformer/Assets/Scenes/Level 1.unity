@@ -4400,7 +4400,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e6db83dbb4583442a3f2de3c835cad5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerManager: {fileID: 0}
+  playerManager: {fileID: 1258286895}
   damage: 3
 --- !u!114 &565105724
 MonoBehaviour:
@@ -5225,7 +5225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e6db83dbb4583442a3f2de3c835cad5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerManager: {fileID: 0}
+  playerManager: {fileID: 1258286895}
   damage: 3
 --- !u!114 &631847484
 MonoBehaviour:
@@ -8314,7 +8314,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -42.362305, y: -2.8242188, z: -25.417358, w: 0}
+  m_margin: {x: -29.69281, y: -2.8242188, z: -25.417358, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -8345,7 +8345,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.125, y: 258}
+  m_AnchoredPosition: {x: 0, y: 232}
   m_SizeDelta: {x: 197.75, y: 38}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &855629234
@@ -10122,7 +10122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e6db83dbb4583442a3f2de3c835cad5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerManager: {fileID: 0}
+  playerManager: {fileID: 1258286895}
   damage: 3
 --- !u!114 &1065350715
 MonoBehaviour:
@@ -11447,7 +11447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e6db83dbb4583442a3f2de3c835cad5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerManager: {fileID: 0}
+  playerManager: {fileID: 1258286895}
   damage: 4
 --- !u!212 &1163309766
 SpriteRenderer:
@@ -12744,7 +12744,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e6db83dbb4583442a3f2de3c835cad5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerManager: {fileID: 0}
+  playerManager: {fileID: 1258286895}
   damage: 3
 --- !u!114 &1239238518
 MonoBehaviour:
@@ -15212,7 +15212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e6db83dbb4583442a3f2de3c835cad5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerManager: {fileID: 0}
+  playerManager: {fileID: 1258286895}
   damage: 3
 --- !u!114 &1592995396
 MonoBehaviour:
