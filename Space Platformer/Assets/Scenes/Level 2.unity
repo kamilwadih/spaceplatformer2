@@ -86579,6 +86579,10 @@ PrefabInstance:
       propertyPath: currentHealth
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4043415138380657390, guid: 40f85e3949178b742a0348ae4db26960, type: 3}
+      propertyPath: moveSpeed
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4043415138380657391, guid: 40f85e3949178b742a0348ae4db26960, type: 3}
       propertyPath: m_Material
       value: 
