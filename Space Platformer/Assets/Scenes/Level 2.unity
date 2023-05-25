@@ -86579,6 +86579,10 @@ PrefabInstance:
       propertyPath: currentHealth
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4043415138380657391, guid: 40f85e3949178b742a0348ae4db26960, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: f811aeb19830a1543a2963555873f46c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40f85e3949178b742a0348ae4db26960, type: 3}
 --- !u!1001 &7301598454171905923

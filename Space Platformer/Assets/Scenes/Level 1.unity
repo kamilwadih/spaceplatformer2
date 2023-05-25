@@ -15759,11 +15759,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 10
---- !u!1 &1627963373 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8395037787200901491, guid: e80c021454d1fb34386a2b8e5cb2c00f, type: 3}
-  m_PrefabInstance: {fileID: 475260920}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1627963374 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8395037787200901502, guid: e80c021454d1fb34386a2b8e5cb2c00f, type: 3}
@@ -15774,31 +15769,12 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8395037787200901500, guid: e80c021454d1fb34386a2b8e5cb2c00f, type: 3}
   m_PrefabInstance: {fileID: 475260920}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1627963373}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1627963377
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1627963373}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44d1ffad82ee1de4fa683c2181381ebf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timerText: {fileID: 1627963375}
-  currentTime: 0
-  countDown: 0
-  hasLimit: 0
-  timerLimit: 0
-  hasFormat: 1
-  format: 2
 --- !u!1 &1630742682
 GameObject:
   m_ObjectHideFlags: 0
@@ -26288,7 +26264,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df05d3e26bb48e04dba21418d2cf5ba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerText: {fileID: 0}
+  timerText: {fileID: 1627963375}
   currentTime: 0
   countDown: 0
   hasLimit: 0
