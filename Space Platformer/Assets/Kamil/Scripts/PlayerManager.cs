@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -28,7 +29,7 @@ public class PlayerManager : MonoBehaviour
     {
         if (currentHealth <= 0)
         {
-            PauseGame();
+            SceneManager.LoadScene("Death Screen");
         }
         coinText.text = coinCount.ToString();
     }
