@@ -12,7 +12,7 @@ public class PlayerProjectiles : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P) && cooldown == false)
+        if (Input.GetKeyDown(KeyCode.Mouse0) && cooldown == false)
         {
             StartCoroutine(handleCooldown());
             createProjectile();
