@@ -4339,6 +4339,7 @@ GameObject:
   - component: {fileID: 565105724}
   - component: {fileID: 565105723}
   - component: {fileID: 565105722}
+  - component: {fileID: 565105726}
   m_Layer: 0
   m_Name: Alien_idle_2
   m_TagString: Enemy
@@ -4471,6 +4472,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &565105726
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565105720}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 619251450b0899349bde190c3a16ee6d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &566281218
 GameObject:
   m_ObjectHideFlags: 0
@@ -5143,6 +5164,7 @@ GameObject:
   - component: {fileID: 631847484}
   - component: {fileID: 631847483}
   - component: {fileID: 631847482}
+  - component: {fileID: 631847486}
   m_Layer: 0
   m_Name: Alien_idle_2
   m_TagString: Enemy
@@ -5275,6 +5297,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &631847486
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631847480}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 619251450b0899349bde190c3a16ee6d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &637091916
 GameObject:
   m_ObjectHideFlags: 0
@@ -8236,7 +8278,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 47.25
+  m_fontSize: 36.5
   m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -8303,8 +8345,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 264}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -1.125, y: 258}
+  m_SizeDelta: {x: 197.75, y: 38}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &855629234
 GameObject:
@@ -10019,6 +10061,7 @@ GameObject:
   - component: {fileID: 1065350715}
   - component: {fileID: 1065350714}
   - component: {fileID: 1065350713}
+  - component: {fileID: 1065350717}
   m_Layer: 0
   m_Name: Alien_idle_2
   m_TagString: Enemy
@@ -10151,6 +10194,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1065350717
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1065350711}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 619251450b0899349bde190c3a16ee6d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1067598502
 GameObject:
   m_ObjectHideFlags: 0
@@ -11323,6 +11386,7 @@ GameObject:
   - component: {fileID: 1163309764}
   - component: {fileID: 1163309763}
   - component: {fileID: 1163309767}
+  - component: {fileID: 1163309768}
   m_Layer: 0
   m_Name: Alien_idle_2
   m_TagString: Enemy
@@ -11455,6 +11519,26 @@ MonoBehaviour:
   - {fileID: 1490271975}
   nextId: 0
   speed: 1.25
+--- !u!95 &1163309768
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163309761}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 619251450b0899349bde190c3a16ee6d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1169787124
 GameObject:
   m_ObjectHideFlags: 0
@@ -12599,6 +12683,7 @@ GameObject:
   - component: {fileID: 1239238518}
   - component: {fileID: 1239238517}
   - component: {fileID: 1239238516}
+  - component: {fileID: 1239238520}
   m_Layer: 0
   m_Name: Alien_idle_2
   m_TagString: Enemy
@@ -12731,6 +12816,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1239238520
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1239238514}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 619251450b0899349bde190c3a16ee6d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1242582524
 GameObject:
   m_ObjectHideFlags: 0
@@ -12981,9 +13086,9 @@ GameObject:
   - component: {fileID: 1258286887}
   - component: {fileID: 1258286886}
   - component: {fileID: 1258286891}
-  - component: {fileID: 1258286892}
-  - component: {fileID: 1258286893}
   - component: {fileID: 1258286894}
+  - component: {fileID: 1258286895}
+  - component: {fileID: 1258286896}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -13149,35 +13254,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1258286892
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1258286885}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76020ded81bdcce4a9ecb0f32b46e956, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentHealth: 10
-  maxHealth: 0
-  coinCount: 0
---- !u!114 &1258286893
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1258286885}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1620f7a0ebd7cf40bccbbdceed601b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 10
-  maxhealth: 10
 --- !u!114 &1258286894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13191,6 +13267,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 8736924072517771708, guid: 069c03c1845e3444aa9bada72f9afba4, type: 3}
+--- !u!114 &1258286895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258286885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 227b8a992f185b941ad047fa7010ecb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 10
+  maxHealth: 10
+  healthBar: {fileID: 0}
+  coinCount: 0
+  coinText: {fileID: 0}
+--- !u!114 &1258286896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258286885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1620f7a0ebd7cf40bccbbdceed601b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10
+  maxhealth: 10
 --- !u!1 &1285884697
 GameObject:
   m_ObjectHideFlags: 0
@@ -15044,6 +15151,7 @@ GameObject:
   - component: {fileID: 1592995396}
   - component: {fileID: 1592995395}
   - component: {fileID: 1592995393}
+  - component: {fileID: 1592995398}
   m_Layer: 0
   m_Name: Alien_idle_2
   m_TagString: Enemy
@@ -15176,6 +15284,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1592995398
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1592995391}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 619251450b0899349bde190c3a16ee6d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1600535552
 GameObject:
   m_ObjectHideFlags: 0
