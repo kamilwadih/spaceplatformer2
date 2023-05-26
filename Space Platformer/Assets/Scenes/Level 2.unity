@@ -3646,7 +3646,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 267987539}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 31.2849, y: -11.1065, z: -10}
+  m_LocalPosition: {x: 31.2264, y: -11.0284, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -28437,7 +28437,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 31.2849, y: -11.1065, z: -10}
+  m_LocalPosition: {x: 31.2264, y: -11.0284, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -86521,23 +86521,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4043415138380657378, guid: 40f85e3949178b742a0348ae4db26960, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.6919
+      value: 0.78942186
       objectReference: {fileID: 0}
     - target: {fileID: 4043415138380657378, guid: 40f85e3949178b742a0348ae4db26960, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.6919
+      value: 0.78942186
       objectReference: {fileID: 0}
     - target: {fileID: 4043415138380657378, guid: 40f85e3949178b742a0348ae4db26960, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.6919
+      value: 0.78942186
       objectReference: {fileID: 0}
     - target: {fileID: 4043415138380657378, guid: 40f85e3949178b742a0348ae4db26960, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 31.2849
+      value: 31.2264
       objectReference: {fileID: 0}
     - target: {fileID: 4043415138380657378, guid: 40f85e3949178b742a0348ae4db26960, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -11.1065
+      value: -11.0284
       objectReference: {fileID: 0}
     - target: {fileID: 4043415138380657378, guid: 40f85e3949178b742a0348ae4db26960, type: 3}
       propertyPath: m_LocalPosition.z
@@ -86593,7 +86593,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4043415138380657390, guid: 40f85e3949178b742a0348ae4db26960, type: 3}
       propertyPath: jumpForce
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4043415138380657390, guid: 40f85e3949178b742a0348ae4db26960, type: 3}
       propertyPath: moveSpeed

@@ -13366,7 +13366,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  jumpForce: 3.75
+  jumpForce: 4.75
   ceilingCheck: {fileID: 2054575609}
   groundCheck: {fileID: 155299878}
   groundObjects:
